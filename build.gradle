@@ -26,6 +26,12 @@ dependencies {
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
+bootJar {
+    archiveBaseName = 'hello-world'  // Name of the JAR
+    version = '0.0.1-SNAPSHOT'  // Version of the JAR
+    destinationDirectory = layout.buildDirectory.dir('libs')   // Output directory for the JAR
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
