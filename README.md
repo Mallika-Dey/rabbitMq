@@ -4,5 +4,5 @@
 
 java -jar build/libs/rabbitmq-0.0.1-SNAPSHOT.jar --spring.profiles.active=work-queues,sender
 
-java -jar build/libs/rabbitmq-0.0.1-SNAPSHOT.jar --spring.profiles.active=work-queues,receiver
+java -jar build/libs/rabbitmq-0.0.1-SNAPSHOT.jar --spring.profiles.active=work-queues,receiver --server.port=8081
 ```
